@@ -1,0 +1,59 @@
+/* SHOORTCUTS */
+:root {
+  --sidebar-bg-color: #000000;
+  --player-bg-color: hsl(0deg 0% 15.69%);
+  --body-bg-color: hsl(218.57deg 25.93% 10.59%);
+
+  --text-primary-color: #ffffff;
+}
+
+/* SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-primary-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* UTILS */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* DEBUG */
+
+.debug {
+  min-height: 80px;
+  background-color: lightgrey;
+  padding: 2rem;
+}
