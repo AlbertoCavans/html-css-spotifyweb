@@ -8,6 +8,7 @@
 
   /* LAYOUT */
   --player-height: 120px;
+  --top-bar-height: 120px;
   --navbar-width: 50px;
 }
 
@@ -73,6 +74,7 @@ a {
 #nav-bar {
   width: var(--navbar-width);
   background-color: var(--navbar-bg-color);
+  flex-shrink: 0;
 }
 
 /* MAIN */
@@ -81,12 +83,30 @@ a {
 }
 
 #main-top-bar {
-  height: 120px;
+  height: var(--top-bar-height);
   background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: calc(100% - var(--navbar-width));
+}
+
+#main-content {
+  overflow: auto;
+  height: calc(100%);
+  padding-top: var(--top-bar-height);
 }
 
 /* FOOTER */
 #player-bar {
   background-color: var(--player-bg-color);
   height: var(--player-height);
+  height: calc(100% - var(--top-bar-height));
+}
+
+/* !MEDIA TABLET */
+@media all and (min-width: 768px) {
+  /* SHOORTCUTS */
+  :root {
+    --navbar-width: 300px;
+  }
 }
