@@ -91,7 +91,7 @@ a {
 
 #nav-bar div {
   text-align: center;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 #nav-bar div img {
@@ -105,6 +105,13 @@ a {
 
 #nav-bar :last-child {
   margin-top: auto;
+}
+
+#nav-bar .user-block .profile-link .profile-icon {
+  width: 25px;
+  margin: auto;
+  background-color: grey;
+  border-radius: 50%;
 }
 
 /* ? MAIN */
@@ -192,13 +199,24 @@ a {
     line-height: 30px;
   }
 
-  #nav-bar .user-block .install-icon,
-  #nav-bar .user-block .profile-icon {
+  #nav-bar .user-block .install-icon {
     width: 15px;
+    height: 15px;
     margin-right: 10px;
   }
 
   #nav-bar .user-block .install-link {
     border-bottom: 2px solid var(--player-bg-color);
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-bar .user-block .profile-link {
+    margin-right: 10px;
+  }
+
+  #nav-bar .user-block .profile-link span,
+  #nav-bar .user-block .profile-link .box-profile-icon {
+    display: inline;
   }
 }
