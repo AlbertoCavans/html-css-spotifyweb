@@ -86,6 +86,7 @@ a {
 
   display: flex;
   flex-direction: column;
+  color: rgb(163 163 163);
 }
 
 #nav-bar div {
@@ -129,7 +130,6 @@ a {
 #player-bar {
   background-color: var(--player-bg-color);
   height: var(--player-height);
-  height: calc(100% - var(--top-bar-height));
 }
 
 /* !MEDIA TABLET */
@@ -167,6 +167,19 @@ a {
 
   #nav-bar div {
     text-align: left;
+    margin: 5px o;
+  }
+
+  #nav-bar .add-playlist .add-playlist-button {
+    font-size: 2rem;
+    width: 34px;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+
+  #nav-bar div li span {
+    display: inline;
+    margin: 5px 0;
   }
 
   #nav-bar div ul {
@@ -175,7 +188,17 @@ a {
     align-items: start;
   }
 
-  #nav-bar div li span {
-    display: inline;
+  #nav-bar div ul li {
+    line-height: 30px;
+  }
+
+  #nav-bar .user-block .install-icon,
+  #nav-bar .user-block .profile-icon {
+    width: 15px;
+    margin-right: 10px;
+  }
+
+  #nav-bar .user-block .install-link {
+    border-bottom: 2px solid var(--player-bg-color);
   }
 }
