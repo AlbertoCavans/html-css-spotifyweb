@@ -55,11 +55,19 @@ a {
   clear: both;
 }
 
+.hidden-mobile {
+  display: none;
+}
+
+.block-mobile {
+  display: block;
+}
+
 /* DEBUG */
 
 .debug {
   min-height: 80px;
-  background-color: lightgrey;
+  border: 2px solid white;
   padding: 2rem;
 }
 
@@ -70,14 +78,35 @@ a {
   display: flex;
 }
 
-/* NAV-BAR */
+/* ? NAV-BAR */
 #nav-bar {
   width: var(--navbar-width);
   background-color: var(--navbar-bg-color);
   flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
-/* MAIN */
+#nav-bar div {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#nav-bar div img {
+  width: 40px;
+}
+
+#nav-bar .logo-big {
+  display: none;
+  width: 200px;
+}
+
+#nav-bar :last-child {
+  margin-top: auto;
+}
+
+/* ? MAIN */
 #app-main {
   flex-grow: 1;
 }
@@ -108,5 +137,45 @@ a {
   /* SHOORTCUTS */
   :root {
     --navbar-width: 300px;
+  }
+
+  /* UTILS */
+
+  .block-tablet {
+    display: block;
+  }
+
+  .hidden-tablet {
+    display: none;
+  }
+
+  /* APP INTERFACE */
+
+  /* ? NAVBAR */
+
+  #nav-bar {
+    padding: 10px;
+  }
+
+  #nav-bar .logo-big {
+    display: block;
+  }
+
+  #nav-bar .logo-small {
+    display: none;
+  }
+
+  #nav-bar div {
+    text-align: left;
+  }
+
+  #nav-bar div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #nav-bar div li span {
+    display: inline;
   }
 }
