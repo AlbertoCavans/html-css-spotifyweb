@@ -1,10 +1,14 @@
 /* SHOORTCUTS */
 :root {
-  --sidebar-bg-color: #000000;
+  --navbar-bg-color: #000000;
   --player-bg-color: hsl(0deg 0% 15.69%);
   --body-bg-color: hsl(218.57deg 25.93% 10.59%);
 
   --text-primary-color: #ffffff;
+
+  /* LAYOUT */
+  --player-height: 120px;
+  --navbar-width: 50px;
 }
 
 /* SETTINGS */
@@ -56,4 +60,33 @@ a {
   min-height: 80px;
   background-color: lightgrey;
   padding: 2rem;
+}
+
+/* APP INTERFACE */
+
+#app-interface {
+  height: calc(100vh - var(--player-height));
+  display: flex;
+}
+
+/* NAV-BAR */
+#nav-bar {
+  width: var(--navbar-width);
+  background-color: var(--navbar-bg-color);
+}
+
+/* MAIN */
+#app-main {
+  flex-grow: 1;
+}
+
+#main-top-bar {
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+#player-bar {
+  background-color: var(--player-bg-color);
+  height: var(--player-height);
 }
