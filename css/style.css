@@ -112,6 +112,7 @@ a {
   margin: auto;
   background-color: grey;
   border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 /* ? MAIN */
@@ -177,11 +178,23 @@ a {
     margin: 5px o;
   }
 
+  #nav-bar .add-playlist {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+  }
+
   #nav-bar .add-playlist .add-playlist-button {
     font-size: 2rem;
     width: 34px;
     line-height: 30px;
     margin-right: 5px;
+  }
+
+  #nav-bar .add-playlist span {
+    margin: 0;
   }
 
   #nav-bar div li span {
@@ -199,9 +212,13 @@ a {
     line-height: 30px;
   }
 
+  #nav-bar .user-block {
+    padding: 0;
+  }
+
   #nav-bar .user-block .install-icon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 25px;
     margin-right: 10px;
   }
 
@@ -209,14 +226,19 @@ a {
     border-bottom: 2px solid var(--player-bg-color);
     display: flex;
     align-items: center;
+    padding: 0;
   }
 
   #nav-bar .user-block .profile-link {
     margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
   }
 
-  #nav-bar .user-block .profile-link span,
-  #nav-bar .user-block .profile-link .box-profile-icon {
-    display: inline;
+  #nav-bar .user-block .install-link span,
+  #nav-bar .user-block .profile-link span {
+    margin-bottom: auto;
   }
 }
