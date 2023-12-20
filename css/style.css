@@ -78,7 +78,7 @@ a {
   display: flex;
 }
 
-/* ? NAV-BAR */
+/* NAV-BAR */
 #nav-bar {
   width: var(--navbar-width);
   background-color: var(--navbar-bg-color);
@@ -94,6 +94,7 @@ a {
   padding: 5px;
 }
 
+/* ? NAV-BAR LOGO */
 #nav-bar div img {
   width: 40px;
 }
@@ -107,6 +108,7 @@ a {
   margin-top: auto;
 }
 
+/* ? NAV-BAR BOTTOM */
 #nav-bar .user-block .profile-link .profile-icon {
   width: 25px;
   margin: auto;
@@ -115,7 +117,7 @@ a {
   aspect-ratio: 1/1;
 }
 
-/* ? MAIN */
+/* MAIN */
 #app-main {
   flex-grow: 1;
 }
@@ -138,7 +140,53 @@ a {
 #player-bar {
   background-color: var(--player-bg-color);
   height: var(--player-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* ? SONG ONGOING */
+#player-bar .song-ongoing {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+
+#player-bar .song-ongoing .song-ongoing-pic {
+  width: 70px;
+}
+
+#player-bar .song-ongoing .song-ongoing-info {
+  max-width: 130px;
+  width: 100%;
+}
+
+#player-bar .song-ongoing .song-ongoing-info span {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+#player-bar .song-ongoing .song-ongoing-actions {
+  max-width: 60px;
+  width: 100%;
+}
+
+#player-bar .song-ongoing .song-ongoing-favorites i {
+  display: inline-block;
+  padding: 5px;
+}
+
+#player-bar .central-player .player-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ? FOOTER CENTRAL PLAYER */
 
 /* !MEDIA TABLET */
 @media all and (min-width: 768px) {
@@ -159,11 +207,18 @@ a {
 
   /* APP INTERFACE */
 
-  /* ? NAVBAR */
+  /* NAVBAR */
 
   #nav-bar {
     padding: 10px;
   }
+
+  #nav-bar div {
+    text-align: left;
+    margin: 5px o;
+  }
+
+  /* ? NAV-BAR LOGO */
 
   #nav-bar .logo-big {
     display: block;
@@ -173,10 +228,7 @@ a {
     display: none;
   }
 
-  #nav-bar div {
-    text-align: left;
-    margin: 5px o;
-  }
+  /* ? NAV-BAR PLAYLISTS */
 
   #nav-bar .add-playlist {
     padding: 0;
@@ -211,6 +263,8 @@ a {
   #nav-bar div ul li {
     line-height: 30px;
   }
+
+  /* ? NAV-BAR BOTTOM */
 
   #nav-bar .user-block {
     padding: 0;
