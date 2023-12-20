@@ -20,7 +20,9 @@
 
   <body>
     <div id="app-interface">
+      <!-- NAV-BAR -->
       <nav id="nav-bar">
+        <!-- !NAV-BAR LOGO -->
         <div>
           <img
             src="./img/logo-small.svg"
@@ -33,6 +35,8 @@
             alt=""
           />
         </div>
+
+        <!-- ! NAV-BAR MAIN LINKS -->
         <div>
           <ul>
             <li>
@@ -55,6 +59,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- ! NAV-BAR PLAYLISTS -->
         <div class="playlist hidden-mobile block-tablet">
           <h3>PLAYLIST</h3>
           <div class="add-playlist">
@@ -71,6 +77,8 @@
             <li>Nome Playlist</li>
           </ul>
         </div>
+
+        <!-- ! NAV-BAR BOTTOM -->
         <div class="user-block">
           <div class="install-link">
             <div class="box-install-icon">
@@ -433,6 +441,40 @@
         </div>
       </main>
     </div>
-    <footer id="player-bar"></footer>
+
+    <!-- FOOTER -->
+    <footer id="player-bar">
+      <!-- ! FOOTER SONG ONGOING -->
+      <div class="song-ongoing">
+        <figure>
+          <img src="./img/film-sinister.jpeg" class="song-ongoing-pic" alt="" />
+        </figure>
+        <div class="song-ongoing-info">
+          <h5>Sinister</h5>
+          <span>Brano Nome</span>
+        </div>
+        <div class="song-ongoing-favorites">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+
+      <!-- ! FOOTER CENTRAL PLAYER -->
+      <div class="central-player">
+        <div class="player-actions">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="song-bar">
+          <div class="debug"></div>
+        </div>
+      </div>
+
+      <!-- ! FOOTER PLAYER SETTING -->
+      <div class="debug"></div>
+    </footer>
   </body>
 </html>
