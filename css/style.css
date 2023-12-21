@@ -522,6 +522,20 @@ a {
     }
 
     /* MAIN */
+
+    /* ? TOP BAR */
+
+    #main-top-bar .button-top-bar {
+      margin: 50px;
+      padding: 12px 25px;
+      border-radius: 20px;
+    }
+
+    #main-top-bar .button-top-bar:hover {
+      padding: 13px 26px;
+      margin: 47px;
+      font-size: 0.9rem;
+    }
     /* ? MAIN CONTENT */
     /* * RECENTLY PLAYED */
 
