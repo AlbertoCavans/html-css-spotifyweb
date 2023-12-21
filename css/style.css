@@ -193,9 +193,9 @@ a {
 #player-bar .central-player .player-actions,
 #player-bar .central-player .song-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
 }
 
