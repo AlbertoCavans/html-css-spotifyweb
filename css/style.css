@@ -227,6 +227,9 @@ a {
 
 #main-content .album .album-label:hover .album-play-mode {
   display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-content h3 {
