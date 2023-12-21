@@ -209,6 +209,10 @@ a {
   margin: 20px 0;
 }
 
+#main-content .row .col .album h5 {
+  color: gray;
+}
+
 /* FOOTER */
 #player-bar {
   background-color: var(--player-bg-color);
@@ -481,5 +485,13 @@ a {
   #nav-bar .user-block .profile-link span {
     margin-bottom: auto;
     margin-left: 10px;
+  }
+
+  /* ! MEDIA DESKTOP */
+  @media all and (min-width: 1080px) {
+    /* UTILS */
+    .col {
+      width: calc(100% / 6);
+    }
   }
 }
