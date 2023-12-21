@@ -179,6 +179,8 @@ a {
   padding: 5px;
 }
 
+/* ? FOOTER CENTRAL PLAYER */
+
 #player-bar .central-player {
   display: flex;
   justify-content: center;
@@ -214,10 +216,14 @@ a {
 
 #player-bar .central-player .song-bar .progress-bar .played::after {
   content: " ";
-  height: 6px;
-  width: 6px;
+  height: 15px;
+  width: 15px;
   background-color: white;
   border-radius: 50%;
+  position: absolute;
+  transform: translate(50%, 50%);
+  left: 90%;
+  bottom: 50%;
 }
 
 #player-bar .central-player .song-bar .progress-bar:hover .played {
@@ -229,7 +235,47 @@ a {
   text-align: center;
 }
 
-/* ? FOOTER CENTRAL PLAYER */
+/* ? FOOTER SETTINGS */
+
+#player-bar .player-settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+  gap: 10px;
+  margin: 10px;
+}
+
+#player-bar .progress-bar {
+  width: 100%;
+  background-color: grey;
+  height: 5px;
+  border-radius: 5px;
+}
+
+#player-bar .progress-bar .selected {
+  width: 30%;
+  background-color: lightgray;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#player-bar .progress-bar .selected::after {
+  content: " ";
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(50%, 50%);
+  left: 70%;
+  bottom: 50%;
+}
+
+#player-bar .progress-bar:hover .selected {
+  background-color: lightgreen;
+}
 
 /* !MEDIA TABLET */
 @media all and (min-width: 768px) {
