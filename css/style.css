@@ -299,13 +299,15 @@ a {
 
   /* NAVBAR */
 
-  #nav-bar {
-    padding: 10px;
-  }
-
   #nav-bar div {
     text-align: left;
-    margin: 5px o;
+    padding: 0;
+  }
+
+  #nav-bar .logo-section,
+  #nav-bar .playlist,
+  #nav-bar .user-block {
+    padding: 15px;
   }
 
   /* ? NAV-BAR LOGO */
@@ -316,6 +318,17 @@ a {
 
   #nav-bar .logo-small {
     display: none;
+  }
+
+  /* ? NAV-BAR MAIN LINKS */
+
+  #nav-bar div .main-links li {
+    padding-left: 15px;
+    border-left: 4px solid transparent;
+  }
+
+  #nav-bar div .main-links li.active {
+    border-left: 4px solid limegreen;
   }
 
   /* ? NAV-BAR PLAYLISTS */
@@ -355,10 +368,6 @@ a {
   }
 
   /* ? NAV-BAR BOTTOM */
-
-  #nav-bar .user-block {
-    padding: 0;
-  }
 
   #nav-bar .user-block .install-icon {
     width: 20px;
