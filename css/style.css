@@ -3,6 +3,7 @@
   --navbar-bg-color: #000000;
   --player-bg-color: hsl(0deg 0% 15.69%);
   --body-bg-color: hsl(218.57deg 25.93% 10.59%);
+  --top-bar-bg-color: rgba(0, 0, 0, 0.3);
 
   --text-primary-color: #ffffff;
 
@@ -87,6 +88,7 @@ a {
   display: flex;
   flex-direction: column;
   color: rgb(163 163 163);
+  overflow: auto;
 }
 
 #nav-bar a:hover,
@@ -129,14 +131,35 @@ a {
   flex-grow: 1;
 }
 
+/* ? TOP-BAR */
+
 #main-top-bar {
   height: var(--top-bar-height);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--top-bar-bg-color);
   position: fixed;
   top: 0;
   width: calc(100% - var(--navbar-width));
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+#main-top-bar .button-top-bar {
+  background-color: var(--top-bar-bg-color);
+  border: 2px solid white;
+  color: white;
+  margin: 30px;
+  padding: 8px 17px;
+  border-radius: 20px;
+}
+
+#main-top-bar .button-top-bar:hover {
+  padding: 10px 19px;
+  margin: 27px;
+  font-size: 0.9rem;
+}
+
+/* ? MAIN CONTENT */
 #main-content {
   overflow: auto;
   height: calc(100%);
