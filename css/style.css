@@ -184,6 +184,11 @@ a {
 #player-bar .song-ongoing .song-ongoing-favorites i {
   display: inline-block;
   padding: 5px;
+  color: lightgray;
+}
+
+#player-bar .song-ongoing .song-ongoing-favorites i:hover {
+  color: white;
 }
 
 /* ? FOOTER CENTRAL PLAYER */
@@ -204,6 +209,10 @@ a {
   align-items: center;
   gap: 40px;
   width: 100%;
+}
+
+#player-bar .central-player .player-actions .fa-circle-play:hover {
+  font-size: 2.3rem;
 }
 
 #player-bar .central-player .song-bar .progress-bar {
