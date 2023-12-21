@@ -393,5 +393,6 @@ a {
   #nav-bar .user-block .install-link span,
   #nav-bar .user-block .profile-link span {
     margin-bottom: auto;
+    margin-left: 10px;
   }
 }
