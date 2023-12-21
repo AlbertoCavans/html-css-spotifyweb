@@ -45,9 +45,19 @@ a {
 
 /* UTILS */
 .container {
-  max-width: 1080px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
   padding: 0 15px;
+  width: 50%;
 }
 
 .clearfix::after {
@@ -166,6 +176,8 @@ a {
   padding-top: var(--top-bar-height);
 }
 
+/* * CENTRAL LINKS */
+
 #main-content .central-links {
   text-align: center;
 }
@@ -189,6 +201,12 @@ a {
   width: 35px;
   height: 2px;
   background-color: lime;
+}
+
+/* * RECENTLY PLAYED */
+
+#main-content h2 {
+  margin: 20px 0;
 }
 
 /* FOOTER */
@@ -350,6 +368,10 @@ a {
   }
 
   /* UTILS */
+
+  .col {
+    width: 25%;
+  }
 
   .block-tablet {
     display: block;
