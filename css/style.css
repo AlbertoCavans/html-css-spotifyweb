@@ -166,6 +166,31 @@ a {
   padding-top: var(--top-bar-height);
 }
 
+#main-content .central-links {
+  text-align: center;
+}
+
+#main-content .central-link {
+  position: relative;
+  margin: 5px 15px;
+  color: lightgray;
+}
+
+#main-content .central-link:hover {
+  color: white;
+}
+
+#main-content .central-links .open:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 35px;
+  height: 2px;
+  background-color: lime;
+}
+
 /* FOOTER */
 #player-bar {
   background-color: var(--player-bg-color);
