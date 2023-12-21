@@ -89,6 +89,13 @@ a {
   color: rgb(163 163 163);
 }
 
+#nav-bar a:hover,
+#nav-bar .add-playlist:hover,
+#nav-bar li:hover,
+#nav-bar span:hover {
+  color: white;
+}
+
 #nav-bar div {
   text-align: center;
   padding: 5px;
@@ -307,7 +314,7 @@ a {
   #nav-bar .logo-section,
   #nav-bar .playlist,
   #nav-bar .user-block {
-    padding: 15px;
+    padding: 5px 15px;
   }
 
   /* ? NAV-BAR LOGO */
@@ -387,7 +394,8 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0;
+    padding-top: 10px;
+    color: white;
   }
 
   #nav-bar .user-block .install-link span,
